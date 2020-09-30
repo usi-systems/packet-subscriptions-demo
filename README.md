@@ -49,7 +49,7 @@ cd ../../
 ```
 
 If the demo ran correctly, each of the three subscribers should have printed
-the ITCH `add\_order` message it received:
+the ITCH `add_order` message it received:
 ```
 {'price': 2, 'shares': 1, 'stock': 'GOOGL   '}
 {'price': 2, 'shares': 1, 'stock': 'GOOGL   '}
