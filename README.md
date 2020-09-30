@@ -1,9 +1,9 @@
 # Packet Subscriptions Demo
 
-This demo uses Packet Subscriptions to filter ITCH market data. It uses [p4app](https://github.com/p4lang/p4app)
+This demonstrates how packet subscriptions can be used to filter ITCH market data. It uses [p4app](https://github.com/p4lang/p4app)
 to setup a Fat Tree topology with `K=4`. It runs an ITCH feed publisher and three subscribers.
 The subscribers have different filters, which are compiled with the Camus
-compiler to generate P4Runtime forwarding rules which are installed on all the
+compiler to generate P4Runtime forwarding for all the
 switches in the topology.
 
 ## Dependencies
@@ -49,7 +49,7 @@ cd ../../
 ```
 
 If the demo ran correctly, each of the three subscribers should have printed
-the ITCH add\_order it received:
+the ITCH `add\_order` message it received:
 ```
 {'price': 2, 'shares': 1, 'stock': 'GOOGL   '}
 {'price': 2, 'shares': 1, 'stock': 'GOOGL   '}
