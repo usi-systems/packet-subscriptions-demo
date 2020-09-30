@@ -15,7 +15,7 @@ switches in the topology.
 
 This was tested on a freshly installed Ubuntu 18.04 VM.
 
-- Install Docker:
+1. [Install Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04):
 ```
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -25,7 +25,7 @@ sudo apt install docker-ce
 sudo usermod -aG docker ${USER}
 su - ${USER}
 ```
-- Use Opam to install OCaml 4.04.0 and required packages:
+2. Install OCaml 4.04.0 and the required packages with Opam:
 ```
 sudo apt install opam m4 libgmp-dev
 opam init
@@ -35,14 +35,14 @@ opam install async core core_extended oasis menhir ocamlgraph jbuilder ocaml-mig
 eval `opam config env`
 ```
 
-- Build the Camus compiler:
+3. Build the Camus compiler:
 ```
 git clone --recursive https://github.com/usi-systems/packet-subscriptions-demo
 cd packet-subscriptions-demo/itch.p4app/camus-compiler
 make
 ```
 
-- Run the demo:
+4. Run the demo:
 ```
 cd ../../
 ./p4app/p4app run itch.p4app
