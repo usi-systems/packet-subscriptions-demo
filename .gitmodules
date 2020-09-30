@@ -1,0 +1,6 @@
+[submodule "p4app"]
+	path = p4app
+	url = https://github.com/theojepsen/p4app.git
+[submodule "itch.p4app/camus-compiler"]
+	path = itch.p4app/camus-compiler
+	url = https://github.com/usi-systems/camus-compiler.git
